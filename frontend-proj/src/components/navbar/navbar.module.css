@@ -1,0 +1,72 @@
+/* start of navContainer */
+
+.navContainer {
+  display: flex;
+  padding: 15px 0;
+  background-color: rgb(9, 9, 27);
+  color: lightgray;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* start of searchContainer */
+.searchContainer {
+  width: 50%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+}
+.searchBar {
+  outline: none;
+  border: none;
+  padding: 8px 14px;
+  width: 35%;
+  color: black;
+  border-radius: 8px;
+}
+.searchBar:focus {
+  outline: inset royalblue;
+  outline-offset: -3px;
+}
+.searchContainer > button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  top: 10%;
+}
+.searchContainer > button > svg {
+  transition: 0.2s ease-in-out;
+}
+.searchContainer > button > svg:hover {
+  transform: scale(1.2);
+}
+
+/* start of menuItems */
+.menuItems {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menuItem {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.menuItem:hover {
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* end of navContainer */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .menuItems {
+    display: none;
+  }
+  .searchBar {
+    width: 100%;
+  }
+}

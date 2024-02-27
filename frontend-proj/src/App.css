@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.App {
+  background-color: rgb(249, 249, 249);
+}
+.d-none {
+  display: none;
+}

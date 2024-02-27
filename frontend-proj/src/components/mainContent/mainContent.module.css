@@ -1,0 +1,235 @@
+.body {
+  width: 80%;
+  margin: 20px auto;
+}
+.header {
+  font-size: 40px;
+}
+hr {
+  border: 1px solid lightgray;
+}
+/* hr:last-of-type{
+    margin-bottom: 20px;
+} */
+
+/* start of menu */
+.menu {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.menu > div > span {
+  display: flex;
+  align-items: center;
+}
+.relevant > svg {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.relevant > svg:hover {
+  transform: translateY(5px);
+}
+/* end of menu */
+
+/* start of typeMenu */
+
+.typeMenu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: left;
+}
+.typeMenu > p {
+  width: 10%;
+  padding: 8px;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+}
+
+/* end of typeMenu */
+
+/* start of pathMenu */
+
+.pathMenu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* end of pathMenu */
+
+/* start of cardClass */
+.cardContainer {
+  margin: 40px 0;
+}
+.cardClass {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  padding: 0 10px 10px;
+  position: relative;
+}
+.cardNumberContainerClass {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 15%;
+  left: -1%;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.bestTagContainerClass {
+  position: absolute;
+  top: -5%;
+  background-color: orange;
+  padding: 3px;
+  border-radius: 0 8px 8px 0;
+}
+.cardImageClass {
+  width: 25%;
+}
+.cardImageClass > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cardImageClass img {
+  width: 70%;
+  aspect-ratio: 1/1;
+}
+.CardDescClass {
+  width: 50%;
+}
+.highlightsClass {
+  width: 90%;
+  margin-left: auto;
+}
+.moreContainerClass {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.ratingContainerClass {
+  width: 50%;
+  text-align: center;
+  background-color: rgba(135, 207, 235, 0.293);
+  padding: 0 5px 5px;
+  border-radius: 0 0 8px 8px;
+}
+.ratingContainerClass > h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ratingContainerClass > svg {
+  width: 20px;
+  height: 20px;
+}
+.viewButtonContainerClass {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: royalblue;
+  border-radius: 8px;
+}
+.viewButtonContainerClass > h2 {
+  margin: 0;
+}
+/* 4th card */
+.discountContainerClass {
+  display: inline-block;
+  padding: 4px;
+  background-color: rgba(135, 207, 235, 0.277);
+  border-radius: 6px;
+  font-size: smaller;
+}
+.highlightsClass4 {
+  background-color: rgba(255, 192, 203, 0.484);
+  border-radius: 8px;
+  padding: 10px;
+}
+.highlightsClass4 > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 3px;
+}
+.highlightsClass4 > div > span {
+  padding: 4px;
+  background-color: white;
+  color: skyblue;
+  border-radius: 6px;
+}
+.loveClass > ul {
+  list-style: none;
+  padding: 0px;
+}
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.listItem > svg {
+  color: skyblue;
+}
+
+/* end of cardClass */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .body {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .header {
+    font-size: 26px;
+  }
+  .typeMenu {
+    display: none;
+  }
+  .pathMenu {
+    gap: 0;
+    font-size: small;
+  }
+  .cardContainer {
+    font-size: 0.5rem;
+  }
+  .ratingContainerClass > p {
+    display: none;
+  }
+  .cardImageClass > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+        justify-content: center; */
+  }
+  .cardImageClass img {
+    width: 70%;
+    aspect-ratio: 1/1;
+    position: relative;
+    top: 80px;
+  }
+  .cardImageClass > div:first-of-type > p {
+    position: relative;
+    top: 100px;
+  }
+}
